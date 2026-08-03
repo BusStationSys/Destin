@@ -1,5 +1,5 @@
 [submodule "ARVTech.DataAccess"]
-	path = ARVTech.DataAccess
+	path = submodules/ARVTech.DataAccess
 	url = https://github.com/BusStationSys/ARVTech.DataAccess.git
 	branch = main
 [submodule "ARVTech.Shared"]
