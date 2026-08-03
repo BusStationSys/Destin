@@ -1,8 +1,26 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.9.12023.133 insiders
+VisualStudioVersion = 18.9.12023.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destin.Console", "src\Destin.Console\Destin.Console.csproj", "{78A10D2F-017F-4280-8380-CA0F7A8BD04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.DataAccess.Contracts", "submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.Contracts\ARVTech.DataAccess.Contracts.csproj", "{AD1CE9D2-244E-B455-BA79-B4256C810486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.Shared", "submodules\ARVTech.DataAccess\submodules\ARVTech.Shared\src\ARVTech.Shared.csproj", "{77D40806-3653-5DB9-B2E7-C5E30AD7BDE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.DataAccess.DbFactories", "submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.DbFactories\ARVTech.DataAccess.DbFactories.csproj", "{95420FD2-F3A9-B7EC-9669-249821F421EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.DataAccess.DbManager", "submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.DbManager\ARVTech.DataAccess.DbManager.csproj", "{43242098-9569-EA6F-A235-85DE27EA8F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.DataAccess.Domain", "submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.Domain\ARVTech.DataAccess.Domain.csproj", "{D8AB4EB7-3B96-2510-A099-1E721FC85FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.DataAccess.Infrastructure", "submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.Infrastructure\ARVTech.DataAccess.Infrastructure.csproj", "{A0FB9A17-CA59-2D53-8E94-931CE2839124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.DataAccess.Service", "submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.Service\ARVTech.DataAccess.Service.csproj", "{9BB00EE8-35A0-9D71-88E3-EB36F3E0664B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.DataAccess.CQRS", "submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.CQRS\ARVTech.DataAccess.CQRS.csproj", "{344BA151-E47D-884B-3150-B1B359209626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARVTech.Transmission.Engine", "submodules\ARVTech.DataAccess\submodules\ARVTech.Transmission\src\ARVTech.Transmission.Engine\ARVTech.Transmission.Engine.csproj", "{F9C29E56-C4E8-A571-02C7-3F8F331A067F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,6 +32,42 @@ Global
 		{78A10D2F-017F-4280-8380-CA0F7A8BD04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78A10D2F-017F-4280-8380-CA0F7A8BD04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78A10D2F-017F-4280-8380-CA0F7A8BD04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1CE9D2-244E-B455-BA79-B4256C810486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1CE9D2-244E-B455-BA79-B4256C810486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1CE9D2-244E-B455-BA79-B4256C810486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1CE9D2-244E-B455-BA79-B4256C810486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D40806-3653-5DB9-B2E7-C5E30AD7BDE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D40806-3653-5DB9-B2E7-C5E30AD7BDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D40806-3653-5DB9-B2E7-C5E30AD7BDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D40806-3653-5DB9-B2E7-C5E30AD7BDE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95420FD2-F3A9-B7EC-9669-249821F421EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95420FD2-F3A9-B7EC-9669-249821F421EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95420FD2-F3A9-B7EC-9669-249821F421EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95420FD2-F3A9-B7EC-9669-249821F421EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43242098-9569-EA6F-A235-85DE27EA8F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43242098-9569-EA6F-A235-85DE27EA8F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43242098-9569-EA6F-A235-85DE27EA8F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43242098-9569-EA6F-A235-85DE27EA8F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8AB4EB7-3B96-2510-A099-1E721FC85FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8AB4EB7-3B96-2510-A099-1E721FC85FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8AB4EB7-3B96-2510-A099-1E721FC85FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8AB4EB7-3B96-2510-A099-1E721FC85FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FB9A17-CA59-2D53-8E94-931CE2839124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FB9A17-CA59-2D53-8E94-931CE2839124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FB9A17-CA59-2D53-8E94-931CE2839124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FB9A17-CA59-2D53-8E94-931CE2839124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB00EE8-35A0-9D71-88E3-EB36F3E0664B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB00EE8-35A0-9D71-88E3-EB36F3E0664B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB00EE8-35A0-9D71-88E3-EB36F3E0664B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB00EE8-35A0-9D71-88E3-EB36F3E0664B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344BA151-E47D-884B-3150-B1B359209626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344BA151-E47D-884B-3150-B1B359209626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344BA151-E47D-884B-3150-B1B359209626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344BA151-E47D-884B-3150-B1B359209626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9C29E56-C4E8-A571-02C7-3F8F331A067F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C29E56-C4E8-A571-02C7-3F8F331A067F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C29E56-C4E8-A571-02C7-3F8F331A067F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C29E56-C4E8-A571-02C7-3F8F331A067F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
