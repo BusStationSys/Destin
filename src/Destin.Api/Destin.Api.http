@@ -1,0 +1,6 @@
+@Destin.Api_HostAddress = http://localhost:5188
+
+GET {{Destin.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

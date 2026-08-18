@@ -2,17 +2,37 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>false</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>1701;1702;ASP0014;CA1827;CS8602;CS8618;CS8629;IDE0290;IDE0300;S1155;S2737</NoWarn>
+    <NoWarn>1701;1702;ASP0014;CA1827;CS8601;CS8602;CS8618;CS8629;IDE0030;IDE0063;IDE0290;IDE0300;IDE0305;S1155;S2737</NoWarn>
     <OutputPath>bin\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>1701;1702;ASP0014;CA1827;CS8602;CS8618;CS8629;IDE0290;IDE0300;S1155;S2737</NoWarn>
+    <NoWarn>1701;1702;ASP0014;CA1827;CS8601;CS8602;CS8618;CS8629;IDE0030;IDE0063;IDE0290;IDE0300;IDE0305;S1155;S2737</NoWarn>
     <OutputPath>bin\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.DbManager\ARVTech.DataAccess.DbManager.csproj" />
+    <ProjectReference Include="..\..\submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.Domain\ARVTech.DataAccess.Domain.csproj" />
+    <ProjectReference Include="..\..\submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.Infrastructure\ARVTech.DataAccess.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\submodules\ARVTech.DataAccess\src\ARVTech.DataAccess.Service\ARVTech.DataAccess.Service.csproj" />
+    <ProjectReference Include="..\..\submodules\ARVTech.DataAccess\submodules\ARVTech.Shared\src\ARVTech.Shared.csproj" />
+    <ProjectReference Include="..\..\submodules\ARVTech.HttpClient\ARVTech.HttpClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

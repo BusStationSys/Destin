@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;ASP0014;CA1827;CS8602;CS8618;CS8629;IDE0290;IDE0300;S1155;S2737</NoWarn>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;ASP0014;CA1827;CS8602;CS8618;CS8629;IDE0290;IDE0300;S1155;S2737</NoWarn>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+
+</Project>
